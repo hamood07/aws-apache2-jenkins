@@ -1,11 +1,11 @@
 #!/bin/bash
-apt update -y
-apt install -y httpd git
-systemctl start httpd
-systemctl enable httpd
+sudo apt update -y
+sudo apt install -y httpd git
+sudo systemctl start httpd
+sudo systemctl enable httpd
 
 # Clone your GitHub repo
-git clone https://github.com/hamood07/aws-apache2-jenkins /tmp/app
+sudo git clone https://github.com/hamood07/aws-apache2-jenkins /tmp/app
 
 # Copy index.html to Apache web root
-cp /tmp/app/index.html /var/www/html/index.html
+sudo cp /tmp/app/index.html /var/www/html/index.html

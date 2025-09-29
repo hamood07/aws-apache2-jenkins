@@ -1,6 +1,6 @@
 #!/bin/bash
-yum update -y
-yum install -y httpd git
+apt update -y
+apt install -y httpd git
 systemctl start httpd
 systemctl enable httpd
 

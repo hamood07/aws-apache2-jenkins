@@ -4,7 +4,6 @@ sudo apt install -y apache2 git
 sudo systemctl start apache2
 sudo systemctl enable apache2
 
-sudo rm -rf /tmp/app
 # Clone your GitHub repo
 sudo git clone https://github.com/hamood07/aws-apache2-jenkins /tmp/app
 
